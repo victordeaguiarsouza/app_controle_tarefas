@@ -22,7 +22,7 @@
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                         <a class="dropdown-item" href="{{ route('tarefa.exportacao', ['extensao' => 'xlsx']) }}">XLSX</a>
                                         <a class="dropdown-item" href="{{ route('tarefa.exportacao', ['extensao' => 'csv']) }}">CSV</a>
-                                        <a class="dropdown-item" href="{{ route('tarefa.exportarPdf') }}">PDF</a>
+                                        <a class="dropdown-item" target="_blank" href="{{ route('tarefa.exportarPdf') }}">PDF</a>
                                     </div>
                                 </div>
                             </div>
