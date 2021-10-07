@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('bem-vindo');
+    return view('welcome');
 });
 
 
@@ -23,3 +23,6 @@ Route::get('/mensagem-teste',function(Request $request){
     /* Mail::to(Auth::user())->send(new MensagemTesteMail());
     return 'email enviado com sucesso'; */
 });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

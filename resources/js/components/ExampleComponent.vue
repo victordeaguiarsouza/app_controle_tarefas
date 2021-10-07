@@ -1,5 +1,6 @@
 <template>
     <div class="container">
+        {{ $store.state.teste }}
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
